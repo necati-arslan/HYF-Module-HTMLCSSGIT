@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+/* general class*/
+.directed-button{
+    margin: 30px 0px 50px 0px;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: 0px;
+}
+
+.directed-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+/* general class*/
+header nav {
+  display: flex;
+  padding: 12px 0px;
+  justify-content: space-between;
+  background-color: #000000;
+  height: 64px;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation-logo {
+  flex: 0;
+  font-size: 30px;
+}
+
+.navigation-logo a {
+  font-size: 24px;
+}
+
+nav .navigation-menu,
+.navigation-login, .navigation-responsive {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.navigation-login {
+  justify-content: flex-end;
+}
+
+.navigation-menu .navigation-menu-item:nth-child(1) {
+  margin-left: 40px;
+}
+
+.navigation-login .navigation-login-item button {
+  background-color: black;
+  border: 0px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-login .navigation-login-item span {
+  margin-left: 10px;
+}
+
+.navigation-login .navigation-login-item:last-child button {
+  color: black;
+  background: white;
+  padding: 15px;
+  border-radius: 40px;
+  font-weight: 900;
+}
+
+.navigation-responsive {
+    justify-content:flex-end ;
+    display: none;
+}
+
+
+.navigation-responsive .navigation-responsive-item button {
+    background-color: black;
+    border: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .navigation-responsive .navigation-responsive-item:nth-child(2) button {
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 700;
+  }
+
+
+/*------main---------*/
+section.intro {
+  height: auto;
+  padding: 64px 144px;
+  background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1440,h_755/v1653688465/assets/29/74ec2f-a727-47e1-9695-c78f8dadee5f/original/DotCom_Update_Earner_bg2x.jpg');
+  background-repeat:no-repeat ;
+  background-size: auto;
+}
+
+section.intro .grid-container {
+    
+  max-width: 576px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px 500px;
+}
+
+section.intro .grid-container .grid-container-item {
+  min-height: 50px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+section.intro .grid-container .grid-container-item .content {
+  width: 81px;
+  height: 100%;
+}
+
+section.intro .grid-container .grid-container-item .content.active {
+  border-bottom: 2px solid black;
+}
+
+section.intro .grid-container .grid-container-item .image {
+  margin-bottom: 10px;
+}
+
+section.intro .grid-container .grid-container-item:last-child {
+  grid-column: 1/4;
+  background-color: white;
+  padding: 48px;
+  text-align: left;
+}
+section.intro .grid-container .grid-container-item:last-child h1 {
+  margin-bottom: 20px;
+}
+
+
+
+  section.intro .grid-container .grid-container-item:last-child  a.drive{
+    color: black;    
+  }
+
+  /*-----section business*/
+
+  section.business {
+    height: auto;
+    padding: 64px 144px;
+    background-image:url("https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.business p {
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*---responsive----*/
+
+@media only screen and (max-width: 1000px) {
+
+    header nav {
+       
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+   
+    nav .navigation-menu, .navigation-login {
+        display: none;
+    }
+    nav .navigation-responsive{
+        display: flex;
+    }
+
+    section.intro {
+        padding: 0 ;
+        
+      }
+      section.intro .grid-container {
+        max-width: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 500px;
+      }
+  
+  }
