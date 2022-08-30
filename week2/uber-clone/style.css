@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 50px;
+  font-weight: 300px;
 }
 
 /* general class*/
@@ -195,7 +196,139 @@ section.business p {
     margin-bottom: 10px;
 }
 
+  /*-----section second*/
 
+  section.second{
+    height: auto;
+    margin: auto;
+    max-width: 1152px;
+    padding-top: 64px;
+  }
+
+  section.second .content{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  section.second .content .item {
+    flex-shrink: 1;
+   
+  }
+  section.second .content .item .text{
+    padding-top: 30px;
+    line-height: 1.8;
+   
+  }
+  section.second .content .item .text .link{
+    padding-top: 30px;
+    display: flex;
+    gap:20px;
+   
+  }
+  section.second .content .item .text a{
+    color: black;
+   
+  }
+
+  /*-----section third*/
+
+  section.third{
+    height: auto;
+    margin: auto;
+    max-width: 1152px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  section.third .content{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    line-height: 1.8;
+  }
+
+  section.third .content .item .header{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  section.third .content .item .link{
+    
+    margin-top: 20px;
+  }
+
+  section.third .content .item .link a{
+    color: black;    
+  }
+
+    /*-----footer */
+
+    footer{
+      background-color: black;
+      color: white;
+    
+    }
+    footer .all-content{
+      height: auto;
+      margin: auto;
+      max-width: 1152px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      line-height: 1.8;
+    }
+
+    footer .top-link{
+      text-align: right;
+    }
+
+    footer .top-link a{
+      color: white;
+      text-decoration: none;
+     
+    }
+    footer .help-center {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-weight: unset;
+    }
+
+    footer .content{
+      display: flex;
+      gap: 100px;
+    }
+    footer .content ul{
+      list-style: none;
+    }
+
+    footer .content ul li:first-child{
+      font-weight: 700;
+      margin-bottom: 20px;   
+     }
+
+     footer .social{
+      display: flex;
+      justify-content: space-between;
+     }
+    
+     footer .social ul{
+      display: flex;
+      gap: 40px;
+      list-style: none;
+      margin-top: 50px;
+     }
+
+     footer .social .app {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+     }
+     footer .social .app .item{
+      width: 136px;
+      height: 40px;
+    
+     }
 
 
 /*---responsive----*/
@@ -226,5 +359,35 @@ section.business p {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 120px 500px;
       }
-  
+
+      section.second {
+        padding: 20px;
+      } 
+
+     section.second .content{
+      flex-direction: column;
+     } 
+
+     section.third {
+      padding: 20px;
+    } 
+
+   section.third .content{
+    flex-direction: column;
+   } 
+
+   footer .all-content{
+    padding: 20px;
+   }
+
+   footer .content{
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+    }
+    footer .social{
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+    }
   }
